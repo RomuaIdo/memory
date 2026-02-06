@@ -1,0 +1,118 @@
+# -------------------------------------------------------------------------- #
+#
+# Copyright (C) 2025  Altera Corporation. All rights reserved.
+# Your use of Altera Corporation's design tools, logic functions 
+# and other software and tools, and any partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Altera Program License 
+# Subscription Agreement, the Altera Quartus Prime License Agreement,
+# the Altera IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Altera and sold by Altera or its authorized distributors.  Please
+# refer to the Altera Software License Subscription Agreements 
+# on the Quartus Prime software download page.
+#
+# -------------------------------------------------------------------------- #
+#
+# Quartus Prime
+# Version 24.1std.0 Build 1077 03/04/2025 SC Lite Edition
+# Date created = 13:22:16  December 02, 2025
+#
+# -------------------------------------------------------------------------- #
+#
+# Notes:
+#
+# 1) The default values for assignments are stored in the file:
+#		Memory_assignment_defaults.qdf
+#    If this file doesn't exist, see file:
+#		assignment_defaults.qdf
+#
+# 2) Intel recommends that you do not modify this file. This
+#    file is updated automatically by the Quartus Prime software
+#    and any changes you make may be lost or overwritten.
+#
+# -------------------------------------------------------------------------- #
+
+
+set_global_assignment -name FAMILY "MAX 10"
+set_global_assignment -name DEVICE 10M50DAF484C7G
+set_global_assignment -name TOP_LEVEL_ENTITY Memory
+set_global_assignment -name ORIGINAL_QUARTUS_VERSION 24.1STD.0
+set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:22:16  DECEMBER 02, 2025"
+set_global_assignment -name LAST_QUARTUS_VERSION "24.1std.0 Lite Edition"
+set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
+set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
+set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
+set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
+set_global_assignment -name EDA_SIMULATION_TOOL "Questa Intel FPGA (Verilog)"
+set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
+set_global_assignment -name EDA_OUTPUT_DATA_FORMAT "VERILOG HDL" -section_id eda_simulation
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_timing
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_symbol
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_signal_integrity
+set_global_assignment -name EDA_GENERATE_FUNCTIONAL_NETLIST OFF -section_id eda_board_design_boundary_scan
+set_global_assignment -name VHDL_FILE leds.vhd
+set_global_assignment -name VHDL_FILE Memory.vhd
+set_global_assignment -name VHDL_FILE Timer.vhd
+set_global_assignment -name VHDL_FILE bin_to_dec_2dig.vhd
+set_global_assignment -name VHDL_FILE bin_to_dec.vhd
+set_global_assignment -name VHDL_FILE Game_Controller.vhd
+set_global_assignment -name PARTITION_NETLIST_TYPE SOURCE -section_id Top
+set_global_assignment -name PARTITION_FITTER_PRESERVATION_LEVEL PLACEMENT_AND_ROUTING -section_id Top
+set_global_assignment -name PARTITION_COLOR 16764057 -section_id Top
+set_location_assignment PIN_P11 -to clk_50MHz
+set_location_assignment PIN_B8 -to confirm
+set_location_assignment PIN_F15 -to input[9]
+set_location_assignment PIN_B14 -to input[8]
+set_location_assignment PIN_A14 -to input[7]
+set_location_assignment PIN_A13 -to input[6]
+set_location_assignment PIN_B12 -to input[5]
+set_location_assignment PIN_A12 -to input[4]
+set_location_assignment PIN_C12 -to input[3]
+set_location_assignment PIN_D12 -to input[2]
+set_location_assignment PIN_C11 -to input[1]
+set_location_assignment PIN_C10 -to input[0]
+set_location_assignment PIN_B11 -to leds_out[9]
+set_location_assignment PIN_A11 -to leds_out[8]
+set_location_assignment PIN_D14 -to leds_out[7]
+set_location_assignment PIN_E14 -to leds_out[6]
+set_location_assignment PIN_C13 -to leds_out[5]
+set_location_assignment PIN_D13 -to leds_out[4]
+set_location_assignment PIN_B10 -to leds_out[3]
+set_location_assignment PIN_A10 -to leds_out[2]
+set_location_assignment PIN_A9 -to leds_out[1]
+set_location_assignment PIN_A8 -to leds_out[0]
+set_location_assignment PIN_A7 -to reset
+set_location_assignment PIN_E17 -to lifeshex[6]
+set_location_assignment PIN_D19 -to lifeshex[5]
+set_location_assignment PIN_C20 -to lifeshex[4]
+set_location_assignment PIN_C19 -to lifeshex[3]
+set_location_assignment PIN_E21 -to lifeshex[2]
+set_location_assignment PIN_E22 -to lifeshex[1]
+set_location_assignment PIN_F21 -to lifeshex[0]
+set_location_assignment PIN_B17 -to scorehex[13]
+set_location_assignment PIN_A18 -to scorehex[12]
+set_location_assignment PIN_A17 -to scorehex[11]
+set_location_assignment PIN_B16 -to scorehex[10]
+set_location_assignment PIN_E18 -to scorehex[9]
+set_location_assignment PIN_D18 -to scorehex[8]
+set_location_assignment PIN_C18 -to scorehex[7]
+set_location_assignment PIN_C17 -to scorehex[6]
+set_location_assignment PIN_D17 -to scorehex[5]
+set_location_assignment PIN_E16 -to scorehex[4]
+set_location_assignment PIN_C16 -to scorehex[3]
+set_location_assignment PIN_C15 -to scorehex[2]
+set_location_assignment PIN_E15 -to scorehex[1]
+set_location_assignment PIN_C14 -to scorehex[0]
+set_location_assignment PIN_N20 -to velocityhex[6]
+set_location_assignment PIN_N19 -to velocityhex[5]
+set_location_assignment PIN_M20 -to velocityhex[4]
+set_location_assignment PIN_N18 -to velocityhex[3]
+set_location_assignment PIN_L18 -to velocityhex[2]
+set_location_assignment PIN_K20 -to velocityhex[1]
+set_location_assignment PIN_J20 -to velocityhex[0]
+set_instance_assignment -name IO_STANDARD "2.5 V SCHMITT TRIGGER" -to confirm
+set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top

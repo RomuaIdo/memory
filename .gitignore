@@ -1,0 +1,25 @@
+#Quartus compile files and directories
+/db/
+/incremental_db/
+/output_files/
+/simulation/modelsim/
+/greybox_tmp/
+
+*.bak
+*.qws
+*.ppf
+*.ddb
+*.cmp
+*.sip
+*.spd
+*.bsf
+*.f
+*.hdl
+*.html
+*.jdi
+*.pin
+*.sof
+*.pof
+*.smsg
+*.summary
+*.done
