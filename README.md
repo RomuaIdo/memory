@@ -38,6 +38,7 @@ The project is structured in a modular fashion with `Memory.vhd` serving as the 
 The core logic is governed by an FSM with the following states: `START`, `GEN_PATTERN`, `SHOW_LEDS`, `WAIT_INPUT`, `CHECK_RESULT`, and `GAME_OVER`.
 
 ![FSM Diagram Placeholder](images/fsm_diagram.png)
+
 *Figure 1: State Diagram of the Game Controller.*
 
 ### Implementation Results
