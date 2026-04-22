@@ -98,6 +98,7 @@ O projeto está estruturado de forma modular, com `Memory.vhd` atuando como a en
 A lógica central é governada por uma FSM com os seguintes estados: `START`, `GEN_PATTERN`, `SHOW_LEDS`, `WAIT_INPUT`, `CHECK_RESULT` e `GAME_OVER`.
 
 ![Diagrama FSM Placeholder](images/fsm_diagram.png)
+
 *Figura 1: Diagrama de Estados do Controlador do Jogo.*
 
 ### Resultados da Implementação
